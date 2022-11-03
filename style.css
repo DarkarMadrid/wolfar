@@ -1,0 +1,125 @@
+header{
+    width: 100%;
+    height: 600px;
+    background: #b1b1b1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(293, 95%, 16%, 0.616), hsla(240, 100%, 50%, 0.247)), url(img/bg.jpg);
+    background: linear-gradient(to right, hsla(293, 95%, 16%, 0.616), hsla(240, 100%, 51%, 0.315)), url(img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+
+  
+    [class*="col-"]{
+    float:left;
+      padding: 15px;
+    }
+    
+    .fila::after{
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+.header__div__wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.marcas{
+    display: flex;
+    width: 100%;
+}
+.marcas__flex, .Ferrari-Logo, .BMW-logo{
+    display: flex;
+}
+.marcas__flex > img{
+    width: 80%;
+    padding-left: 1em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.Ferrari-Logo > img{
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.BMW-logo > img{
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.contenedor__slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.contenedor__slogan > h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.section{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.764) 32%, rgba(255,255,255,0) 100%);
+    width: 100%;
+    height: 400px;
+}
+.contenedor__oscuro{
+    background-color: black;
+    height: 30%;
+    padding: 30px;
+    
+}
+.contenedor__oscuro > p{
+    color: #fff;
+    font-size: 3rem;
+}
+.section2{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 32%, rgba(255,255,255,0) 100%);
+    width: 100%;
+    height: 400px;
+}
+.contenedor__cards{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 35px;
+}
+.contenedor__footer{
+    background-color: rgb(48, 48, 48);
+    height: 300px;
+}
+#Titulos__footer, #parrafo-_footer{
+    color: #fff;
+
+}
+
+@media only screen and (max-width: 768px){
+    .col-1{width: 25%;}
+    .col-2{width: 50%;}
+    .col-3{width: 75%;}
+    .col-4{width: 100%;}
+    .col-5{width: 30%;}
+}
+
+
+@media only screen and (max-width: 480px){
+  [class*="col-"]{
+    width: 100%;
+  }
+
+  li{
+    float: none;
+  }
+  
+}
